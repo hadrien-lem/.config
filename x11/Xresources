@@ -1,0 +1,18 @@
+// General
+*.font: Liberation Mono:size=10
+
+// dwm
+dwm.borderpx: 4
+dwm.resizehints: 0
+
+dwm.normbordercolor: #343a40
+dwm.normbgcolor: #343a40
+dwm.normfgcolor: #d8d8d8
+dwm.selbordercolor: #485159
+dwm.selbgcolor: #485159
+dwm.selfgcolor: #f2f2f2
+
+dmenu.background: #343a40
+dmenu.foreground: #d8d8d8
+dmenu.selbackground: #485159
+dmenu.selforeground: #f2f2f2

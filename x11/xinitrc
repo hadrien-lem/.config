@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# .xinitrc
+
+#wp=$(find ~/Images/Fond\ d\'écran/*.{jpg, png} | shuf -n 1)		# Select wallpaper
+wp=~/Images/Fond\ d\'écran/wp.png			# Select wallpaper
+xrandr -s 1680x1050							# Screen resolution
+#xthemer("$wp") &							# Set colors in Xresources.d files
+feh --no-fehbg --bg-fill "$wp"				# Set wallpaper
+xrdb ~/.Xresources							# Xresources
+setxkbmap -layout fr -variant latin9		# Select keyboard layout
+numlockx  									# Activate numpad
+picom &										# Shadow and transparency
+
+# Windows manager
+[ "$(tty)" = "/dev/tty1" ] && exec dwm
